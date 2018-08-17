@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91DF3E5B212760A500509C52 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF3E5A212760A500509C52 /* SpeechRecognitionService.swift */; };
+		91DF3E5F2127875600509C52 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF3E5E2127875600509C52 /* AudioController.swift */; };
 		91FAEAC821275DA8002EA69F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FAEAC721275DA8002EA69F /* AppDelegate.swift */; };
 		91FAEACA21275DA8002EA69F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FAEAC921275DA8002EA69F /* ViewController.swift */; };
 		91FAEACD21275DA8002EA69F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FAEACB21275DA8002EA69F /* Main.storyboard */; };
 		91FAEACF21275DAA002EA69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FAEACE21275DAA002EA69F /* Assets.xcassets */; };
 		91FAEAD221275DAA002EA69F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FAEAD021275DAA002EA69F /* LaunchScreen.storyboard */; };
+		F1E38166F3A48284510B8E69 /* Pods_FluxNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704C35BB473EF8154034E014 /* Pods_FluxNotes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		704C35BB473EF8154034E014 /* Pods_FluxNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FluxNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91DF3E592127601500509C52 /* Speech-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Speech-Bridging-Header.h"; sourceTree = "<group>"; };
+		91DF3E5A212760A500509C52 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		91DF3E5E2127875600509C52 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
 		91FAEAC421275DA8002EA69F /* FluxNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluxNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FAEAC721275DA8002EA69F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91FAEAC921275DA8002EA69F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,8 @@
 		91FAEACE21275DAA002EA69F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91FAEAD121275DAA002EA69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91FAEAD321275DAA002EA69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF6DFE01871446EB88EA22B8 /* Pods-FluxNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluxNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FluxNotes/Pods-FluxNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		E1C7D869834315428D2A711E /* Pods-FluxNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluxNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-FluxNotes/Pods-FluxNotes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E38166F3A48284510B8E69 /* Pods_FluxNotes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +50,8 @@
 			children = (
 				91FAEAC621275DA8002EA69F /* FluxNotes */,
 				91FAEAC521275DA8002EA69F /* Products */,
+				D1081830D5DC6BD3179B64B0 /* Pods */,
+				9FE326B759FE979BB4DF18C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +72,28 @@
 				91FAEACE21275DAA002EA69F /* Assets.xcassets */,
 				91FAEAD021275DAA002EA69F /* LaunchScreen.storyboard */,
 				91FAEAD321275DAA002EA69F /* Info.plist */,
+				91DF3E592127601500509C52 /* Speech-Bridging-Header.h */,
+				91DF3E5A212760A500509C52 /* SpeechRecognitionService.swift */,
+				91DF3E5E2127875600509C52 /* AudioController.swift */,
 			);
 			path = FluxNotes;
+			sourceTree = "<group>";
+		};
+		9FE326B759FE979BB4DF18C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				704C35BB473EF8154034E014 /* Pods_FluxNotes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1081830D5DC6BD3179B64B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF6DFE01871446EB88EA22B8 /* Pods-FluxNotes.debug.xcconfig */,
+				E1C7D869834315428D2A711E /* Pods-FluxNotes.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91FAEAD621275DAA002EA69F /* Build configuration list for PBXNativeTarget "FluxNotes" */;
 			buildPhases = (
+				EAEF6CCF9FA50A62CF9736A4 /* [CP] Check Pods Manifest.lock */,
 				91FAEAC021275DA8002EA69F /* Sources */,
 				91FAEAC121275DA8002EA69F /* Frameworks */,
 				91FAEAC221275DA8002EA69F /* Resources */,
+				24DFD5E5C66BCA3F7AC4B493 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +164,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24DFD5E5C66BCA3F7AC4B493 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FluxNotes/Pods-FluxNotes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/googleapis/googleapis.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/googleapis.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FluxNotes/Pods-FluxNotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAEF6CCF9FA50A62CF9736A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FluxNotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		91FAEAC021275DA8002EA69F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				91FAEACA21275DA8002EA69F /* ViewController.swift in Sources */,
+				91DF3E5B212760A500509C52 /* SpeechRecognitionService.swift in Sources */,
+				91DF3E5F2127875600509C52 /* AudioController.swift in Sources */,
 				91FAEAC821275DA8002EA69F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +367,7 @@
 		};
 		91FAEAD721275DAA002EA69F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF6DFE01871446EB88EA22B8 /* Pods-FluxNotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +386,7 @@
 		};
 		91FAEAD821275DAA002EA69F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1C7D869834315428D2A711E /* Pods-FluxNotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
