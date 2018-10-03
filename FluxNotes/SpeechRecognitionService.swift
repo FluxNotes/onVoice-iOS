@@ -9,7 +9,7 @@
 import Foundation
 import googleapis
 
-let API_KEY : String = "YOUR_API_KEY"
+let API_KEY : String = "AIzaSyD8S8NHMhVeWTbFLu3wqOrb-EE5ZfZNhU4"
 let HOST = "speech.googleapis.com"
 
 typealias SpeechRecognitionCompletionHandler = (StreamingRecognizeResponse?, NSError?) -> (Void)
@@ -51,12 +51,13 @@ class SpeechRecognitionService {
             recognitionConfig.encoding =  .linear16
             recognitionConfig.sampleRateHertz = Int32(sampleRate)
             recognitionConfig.languageCode = "en-US"
-            recognitionConfig.maxAlternatives = 30
-            recognitionConfig.enableWordTimeOffsets = true
+            //recognitionConfig.model = "video"
+            recognitionConfig.enableAutomaticPunctuation = true
+            //recognitionConfig.enableWordTimeOffsets = true
             
             let streamingRecognitionConfig = StreamingRecognitionConfig()
             streamingRecognitionConfig.config = recognitionConfig
-            streamingRecognitionConfig.singleUtterance = false
+            streamingRecognitionConfig.singleUtterance = true
             streamingRecognitionConfig.interimResults = true
             
             let streamingRecognizeRequest = StreamingRecognizeRequest()

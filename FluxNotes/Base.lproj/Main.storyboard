@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,88 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FluxNotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Lw-r7-bt5">
+                                <rect key="frame" x="0.0" y="1068" width="834" height="44"/>
+                                <items>
+                                    <barButtonItem title="Alert" id="dB9-Cn-e40">
+                                        <connections>
+                                            <action selector="alertClicked:" destination="BYZ-38-t0r" id="Qx4-NA-5p3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Start" id="ZvT-3X-7P9">
+                                        <connections>
+                                            <action selector="recordAudio:" destination="BYZ-38-t0r" id="hY7-R0-Y2L"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Stop" id="Cg4-kU-F5a">
+                                        <connections>
+                                            <action selector="stopAudio:" destination="BYZ-38-t0r" id="MXY-95-ArW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDK-eN-2ur">
+                                <rect key="frame" x="0.0" y="20" width="834" height="1048"/>
+                                <connections>
+                                    <segue destination="1kY-R2-bKt" kind="embed" id="2y6-C5-Jsh"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Lw-r7-bt5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2uY-1U-dEP"/>
+                            <constraint firstItem="VDK-eN-2ur" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8SH-Ed-vfl"/>
+                            <constraint firstItem="5Lw-r7-bt5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LLP-5H-opF"/>
+                            <constraint firstItem="VDK-eN-2ur" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bf3-GG-NxQ"/>
+                            <constraint firstItem="5Lw-r7-bt5" firstAttribute="top" secondItem="VDK-eN-2ur" secondAttribute="bottom" id="eWk-02-j9k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VDK-eN-2ur" secondAttribute="trailing" id="gwA-Vv-dOe"/>
+                            <constraint firstItem="5Lw-r7-bt5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tyW-lH-ccy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="P1h-tf-gF4">
+            <objects>
+                <viewController id="1kY-R2-bKt" customClass="WebViewController" customModule="FluxNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sls-qc-qgf">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1048"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AK9-GX-xN4">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1048"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AK9-GX-xN4" secondAttribute="trailing" id="9b5-xD-kXt"/>
+                            <constraint firstAttribute="bottom" secondItem="AK9-GX-xN4" secondAttribute="bottom" id="dQL-pR-Fsf"/>
+                            <constraint firstItem="AK9-GX-xN4" firstAttribute="top" secondItem="sls-qc-qgf" secondAttribute="top" id="rXa-Cl-6iV"/>
+                            <constraint firstItem="AK9-GX-xN4" firstAttribute="leading" secondItem="sls-qc-qgf" secondAttribute="leading" id="sL8-d3-ScF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cBN-Pc-RfM"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="AK9-GX-xN4" id="uCf-x7-qdZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hg4-iu-nvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866" y="133"/>
         </scene>
     </scenes>
 </document>

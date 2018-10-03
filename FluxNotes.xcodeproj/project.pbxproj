@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		91DF3E5B212760A500509C52 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF3E5A212760A500509C52 /* SpeechRecognitionService.swift */; };
 		91DF3E5F2127875600509C52 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF3E5E2127875600509C52 /* AudioController.swift */; };
+		91DF3E6121278A1800509C52 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF3E6021278A1800509C52 /* WebViewController.swift */; };
 		91FAEAC821275DA8002EA69F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FAEAC721275DA8002EA69F /* AppDelegate.swift */; };
 		91FAEACA21275DA8002EA69F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FAEAC921275DA8002EA69F /* ViewController.swift */; };
 		91FAEACD21275DA8002EA69F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FAEACB21275DA8002EA69F /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		91DF3E592127601500509C52 /* Speech-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Speech-Bridging-Header.h"; sourceTree = "<group>"; };
 		91DF3E5A212760A500509C52 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
 		91DF3E5E2127875600509C52 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		91DF3E6021278A1800509C52 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		91FAEAC421275DA8002EA69F /* FluxNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluxNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FAEAC721275DA8002EA69F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91FAEAC921275DA8002EA69F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				91FAEAC721275DA8002EA69F /* AppDelegate.swift */,
 				91FAEAC921275DA8002EA69F /* ViewController.swift */,
 				91FAEACB21275DA8002EA69F /* Main.storyboard */,
+				91DF3E6021278A1800509C52 /* WebViewController.swift */,
 				91FAEACE21275DAA002EA69F /* Assets.xcassets */,
 				91FAEAD021275DAA002EA69F /* LaunchScreen.storyboard */,
 				91FAEAD321275DAA002EA69F /* Info.plist */,
@@ -225,6 +228,7 @@
 				91FAEACA21275DA8002EA69F /* ViewController.swift in Sources */,
 				91DF3E5B212760A500509C52 /* SpeechRecognitionService.swift in Sources */,
 				91DF3E5F2127875600509C52 /* AudioController.swift in Sources */,
+				91DF3E6121278A1800509C52 /* WebViewController.swift in Sources */,
 				91FAEAC821275DA8002EA69F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
